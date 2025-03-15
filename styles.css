@@ -9,7 +9,7 @@ h1{
     text-align: center;
     color: white;
 }
-.ramen-menu{
+#ramen-menu{
     display: flex;
     justify-content:center;
     align-items:center;
