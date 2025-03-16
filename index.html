@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramen-rating-app</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <h1>Ramen Rater</h1>
     <div id="ramen-menu">
@@ -13,15 +15,34 @@
         <img src="./Images/pexels-ryutaro-6249221.jpg" alt="" height="130" width="130">
         <img src="./Images/pexels-minan1398-698549.jpg" alt="" height="130" width="130">
         <img src="./Images/pexels-nadin-sh-78971847-17952227.jpg" alt="" height="130" width="130">
-        <img src="./Images/pexels-rdne-6646355.jpg" alt="" height="130" width="130">
+        <img src="./Images/pexels-rdne-6646355.jpg" alt="" height="130" width="150">
     </div>
-    <img src="./Images/pexels-amar-17593640.jpg" alt="" class='amar' height="200" width="200">
-    <form action="text">
-        <input type="text" name="Add new Ramen" value="Add new Ramen">
-        
+
+    <img src="./Images/pexels-amar-17593640.jpg" alt="" class='amar' height="250" width="250">
+
+    <form action="ramenapp" method="get"> 
+        <input type="text" name="Add new Ramen" value="Add new Ramen" class="title">
+        Name:<input type="text">
+        Restaurant:<input type="text">
+        Image:<input type="url" placeholder="imageurl" required>
+        Rating: <select>
+            <option value="number">1</option>
+            <option value="number">2</option>
+            <option value="number">3</option>
+            <option value="number">4</option>
+            <option value="number">5</option>
+            <option value="number">6</option>
+            <option value="number">7</option>
+            <option value="number">8</option>
+            <option value="number">9</option>
+            <option value="number">10</option>
+        </select>
+        Comment: <textarea name="Comment" id="" rows="2"></textarea>
+        <button type="submit" class="title">Create</button>
     </form>
 
 
     <script src="./index.js"></script>
 </body>
+
 </html>
