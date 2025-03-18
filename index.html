@@ -9,35 +9,28 @@
 </head>
 
 <body>
-    <h1>Ramen Rater</h1>
+    <header>
+        <h1>Ramen Rater</h1>
+    </header>
+    
     <div id="ramen-menu">
-        <img src="./Images/pexels-alteredsnaps-16068586.jpg" alt="" height="130" width="130">
-        <img src="./Images/pexels-ryutaro-6249221.jpg" alt="" height="130" width="130">
-        <img src="./Images/pexels-minan1398-698549.jpg" alt="" height="130" width="130">
-        <img src="./Images/pexels-nadin-sh-78971847-17952227.jpg" alt="" height="130" width="130">
-        <img src="./Images/pexels-rdne-6646355.jpg" alt="" height="130" width="150">
+
+    </div>
+    <div id="ramen-detail">
+        <img id="detail-image" src="" alt="Ramen Image">
+        <h2 id="detail-name"></h2>
+        <h3 id="detail-restaurant"></h3>
+        <p id="detail-rating"></p>
+        <p id="detail-comment"></p>
     </div>
 
-    <img src="./Images/pexels-amar-17593640.jpg" alt="" class='amar' height="250" width="250">
-
-    <form action="ramenapp" method="get"> 
+    <form action="ramenapp" method="get" id="new-ramen"> 
         <input type="text" name="Add new Ramen" value="Add new Ramen" class="title">
-        Name:<input type="text">
-        Restaurant:<input type="text">
-        Image:<input type="url" placeholder="imageurl" required>
-        Rating: <select>
-            <option value="number">1</option>
-            <option value="number">2</option>
-            <option value="number">3</option>
-            <option value="number">4</option>
-            <option value="number">5</option>
-            <option value="number">6</option>
-            <option value="number">7</option>
-            <option value="number">8</option>
-            <option value="number">9</option>
-            <option value="number">10</option>
-        </select>
-        Comment: <textarea name="Comment" id="" rows="2"></textarea>
+        Name:<input type="text" id="detail-name">
+        Restaurant:<input type="text" id="detail-restaurant">
+        Image:<input type="url" placeholder="imageurl" required id="detail-image">
+        Rating: <input type="number" id="detail-rating" name="rating" min="1" max="10" required>
+        Comment: <textarea name="Comment" id="detail-comment" rows="2"></textarea>
         <button type="submit" class="title">Create</button>
     </form>
 
