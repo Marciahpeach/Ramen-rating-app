@@ -1,9 +1,9 @@
 const ramens = [
   { image: "./Images/pexels-alteredsnaps-16068586.jpg", id: "1", name: "Shoyu Ramen", restaurant: "Ichiran", rating: 5, comment: "Delicious!",},
   { image: "/Images/pexels-ryutaro-6249221.jpg", id: "2", name: "Miso Ramen", restaurant: "Menya", rating: 4, comment: "Very flavorful!",},
-  { image: "./Images/pexels-minan1398-698549.jpg", id: "3", name: "Tonkotsu Ramen", restaurant: "Ramen-ya", rating: 7, comment: "Good!",},
-  { image: "./Images/pexels-nadin-sh-78971847-17952227.jpg", id: "4", name: "Nadin Ramen", restaurant: "Ichiran", rating: 10, comment: "Delicacies",},
-  { image: "./Images/pexels-rdne-6646355.jpg", class:'image', name: "Radne Ramen", restaurant: "Menya", rating: 8, comment: "Buriful", }
+   { image: "./Images/pexels-minan1398-698549.jpg", id: "3", name: "Tonkotsu Ramen", restaurant: "Ramen-ya", rating: 7, comment: "Good!",},
+   { image: "./Images/pexels-nadin-sh-78971847-17952227.jpg", id: "4", name: "Nadin Ramen", restaurant: "Ichiran", rating: 10, comment: "Delicacies",},
+   { image: "./Images/pexels-rdne-6646355.jpg", id:'5', name: "Radne Ramen", restaurant: "Menya", rating: 8, comment: "Buriful", }
 ];
 
 
@@ -27,7 +27,7 @@ function handleClick(ramen) {
     <p>Comment: ${ramen.comment}</p>
   `;
 }
-displayRamens();
+
 
 function handleClick(ramen) {
   const detailImage = document.getElementById("detail-image"); 
@@ -46,14 +46,14 @@ function handleClick(ramen) {
 
  function addSubmitListener() {
      const form = document.getElementById("new-ramen");
-     form.addEventListener("submit", (e) => {
-         e.preventDefault();
+     form.addEventListener("submit", () => {
+         preventDefault();
          const newRamen = {
-             name: e.target.name.value,
-             restaurant: e.target.restaurant.value,
-             image: e.target.image.value,
-             rating: e.target.rating.value,
-             comment: e.target.comment.value
+             name:target.name.value,
+             restaurant: target.restaurant.value,
+             image: target.image.value,
+             rating: target.rating.value,
+             comment:target.comment.value
          };
          ramens.push(newRamen);
          const img = document.createElement("img");
